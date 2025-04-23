@@ -16,7 +16,7 @@ print("\nFirst 5 Rows:")
 print(df.head())
 print("\nLast 5 Rows:")
 print(df.tail())
-
+#
 df['Activity Level'] = df['Activity Level'].replace({
     'Highly_Active': 'Highly Active', 
     'Actve': 'Active', 

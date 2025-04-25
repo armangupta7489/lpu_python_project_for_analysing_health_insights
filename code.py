@@ -39,7 +39,7 @@ df['Activity Level'] = df['Activity Level'].fillna(df['Activity Level'].mode()[0
 
 for col in numeric_cols:
     df[col] = df[col].fillna(df[col].median())
-
+#
 df.drop_duplicates(inplace=True)
 
 df['Activity Level Encoded'] = pd.Categorical(df['Activity Level']).codes

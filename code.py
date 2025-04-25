@@ -22,7 +22,7 @@ df['Activity Level'] = df['Activity Level'].replace({
     'Actve': 'Active', 
     'Seddentary': 'Sedentary'
 })
-
+#
 df['Stress Level'] = df['Stress Level'].replace('Very High', 10)
 
 df.replace(['ERROR', 'nan', ''], np.nan, inplace=True)

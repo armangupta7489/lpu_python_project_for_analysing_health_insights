@@ -163,7 +163,7 @@ plt.show()
 pivot_table = df.pivot_table(values=numeric_cols, index='Activity Level', aggfunc='mean')
 print("\nPivot Table of Means by Activity Level:")
 print(pivot_table)
-
+#
 plt.figure(figsize=(12, 6))
 pivot_table.plot(kind='bar', figsize=(12, 6))
 plt.title('Mean Values by Activity Level')

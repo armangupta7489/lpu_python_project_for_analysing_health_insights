@@ -56,7 +56,7 @@ for i, col in enumerate(numeric_cols):
     plt.title(f'Distribution of {col}')
 plt.tight_layout()
 plt.show()
-
+#
 plt.figure(figsize=(15, 10))
 for i, col in enumerate(numeric_cols):
     plt.subplot(3, 2, i+1)

@@ -159,7 +159,7 @@ plt.figure(figsize=(10, 6))
 sns.regplot(data=df, x='Sleep Duration (hours)', y='Stress Level', scatter_kws={'alpha':0.5}, color='teal')
 plt.title('Regression Plot: Sleep Duration vs Stress Level')
 plt.show()
-#
+##
 pivot_table = df.pivot_table(values=numeric_cols, index='Activity Level', aggfunc='mean')
 print("\nPivot Table of Means by Activity Level:")
 print(pivot_table)

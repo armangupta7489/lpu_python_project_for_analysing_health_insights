@@ -32,7 +32,7 @@ df['User ID'] = df['User ID'].fillna(0)
 numeric_cols = ['Heart Rate (BPM)', 'Blood Oxygen Level (%)', 'Step Count', 'Sleep Duration (hours)', 'Stress Level']
 for col in numeric_cols:
     df[col] = pd.to_numeric(df[col], errors='coerce')
-
+#
 df['User ID'] = df['User ID'].astype(int)
 
 df['Activity Level'] = df['Activity Level'].fillna(df['Activity Level'].mode()[0])
